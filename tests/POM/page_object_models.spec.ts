@@ -1,10 +1,8 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './base';
 
 import { RemoveItemFromCart, LoginPage, addProductToCart } from "../../Pages";
-test("POM", async ({ page }) => {
-    const loginPage = new LoginPage(page);
-    const addcart = new addProductToCart(page)
-    const cartpage = new RemoveItemFromCart(page)
+test("POM", async ({ loginPage, addcart, cartpage }) => {
+
 
     await loginPage.gotoLoginPage()
     await loginPage.login('kishor@gmail.com', 'Kishor@7204')
