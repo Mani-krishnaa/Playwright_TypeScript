@@ -1,6 +1,5 @@
 import { test, expect } from './base';
 
-import { RemoveItemFromCart, LoginPage, addProductToCart } from "../../Pages";
 test("POM", async ({ loginPage, addcart, cartpage }) => {
 
 
